@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import '../css/tailwind.scss'
 
 export default function Home() {
   return (
