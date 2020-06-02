@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import "font-awesome/css/font-awesome.min.css";
 import "../css/navbar.sass"
 
 function Navigation() {

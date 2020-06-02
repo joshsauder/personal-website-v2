@@ -14,24 +14,24 @@ function Home({id}){
         style = {particlesStyle}
         params = {particlesParam}
         />
-        <div className="fill-screen">
+        <div className="h-full">
           <div className="mt-8">
             <Bounce left duration={2000} delay={2000}>
                 <h1 className="text-center text-white chewy-font mt-5 mb-4">Josh Sauder</h1>
             </Bounce>
-            <div className="row justify-content-center">
+            <div className="flex justify-center">
               <Slide top duration={2000}>
-                <div className="col-md-1 col-3 ml-4">
+                <div className="flex-1 ml-4">
                   <a href="mailto:joshsauder@gmail.com" title="Send me an email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                 </div>
               </Slide>
               <Slide top duration={2000}>
-                <div className="col-md-1 col-3">
+                <div className="flex-1">
                   <a href="https://www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
                 </div>
               </Slide>
               <Slide top duration={2000}>
-                <div className="col-md-1 col-3">
+                <div className="flex-1">
                   <a href="https://github.com/joshsauder" title="Github Profile" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-lg btn-social"></i></a>
                 </div>
               </Slide>
