@@ -21,16 +21,16 @@ function Navigation() {
 
   return (
     <div className="nav-fixed-top">
-      <nav className={"flex items-center justify-between flex-wrap p-6" + scroll || window.screen.width < 576 ? "bg-darkPurple" : ""}>
+      <nav className={`flex items-center justify-between flex-wrap p-6 ${scroll || window.screen.width < 576 ? "bg-darkPurple" : ""}`}>
       
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-            <h4 className="chewy-font">Josh Sauder</h4>
+            <span className="chewy-font text-xl tracking-tight font-semibold">Josh Sauder</span>
         </div>
       
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-sm lg:flex-grow">
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
                 to="Home"
                 href="#"
@@ -42,7 +42,7 @@ function Navigation() {
                 Home
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
                 to="Experience"
                 href="#"
@@ -54,7 +54,7 @@ function Navigation() {
                 Experience
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
                 to="Education"
                 href="#"
@@ -66,7 +66,7 @@ function Navigation() {
                 Education
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
                 to="Interests"
                 href="#"
@@ -78,7 +78,7 @@ function Navigation() {
                 Interests
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
                 to="Education"
                 href="#"
