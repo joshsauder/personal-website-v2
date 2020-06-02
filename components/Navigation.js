@@ -12,7 +12,7 @@ function Navigation() {
     If position moves, determine if the nav bar should be transparant or not
     */
   const setScrollPos = () => {
-    if (window.scrollY > 500 && !scroll) {
+    if (window.scrollY > 500 && !scroll && window.screen.width > 576) {
       setScroll(true);
     } else if (window.scrollY < 500 && scroll) {
       setScroll(false);
@@ -21,7 +21,7 @@ function Navigation() {
 
   return (
     <div className="nav-fixed-top">
-      <nav className={`flex items-center justify-between flex-wrap p-6 ${scroll || window.screen.width < 576 ? "bg-darkPurple" : ""}`}>
+      <nav className={`flex items-center justify-between flex-wrap p-6 ${scroll ? "bg-darkPurple" : ""}`}>
       
         <div className="flex items-center flex-shrink-0 text-white mr-6">
             <span className="chewy-font text-xl tracking-tight font-semibold">Josh Sauder</span>
