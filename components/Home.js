@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/App.sass';
+import '../css/Home.sass';
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Navigation from './Navigation';
@@ -15,9 +15,9 @@ function Home({id}){
         params = {particlesParam}
         />
         <div className="h-full">
-          <div className="mt-8">
+          <div className="mt-32">
             <Bounce left duration={2000} delay={2000}>
-                <h1 className="text-center text-white chewy-font mt-5 mb-4">Josh Sauder</h1>
+                <h1 className="text-center text-white text-6xl chewy-font mt-5 mb-4">Josh Sauder</h1>
             </Bounce>
             <div className="flex justify-center">
               <Slide top duration={2000}>
@@ -37,7 +37,7 @@ function Home({id}){
               </Slide>
             </div>
             <Slide bottom duration={2000}>
-              <h2 className="text-center text-white chewy-font mt-5">Let&rsquo;s build a better world, one line of code at a time!</h2>
+              <h2 className="text-center text-white chewy-font mt-5 text-3xl">Let&rsquo;s build a better world, one line of code at a time!</h2>
             </Slide>
           </div>
         </div>

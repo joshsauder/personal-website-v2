@@ -1,5 +1,6 @@
 const withSass = require("@zeit/next-sass");
 const tailwindCss = require("tailwindcss");
+
 module.exports = withSass({
  webpack(config, options) {
    const rules = [{
