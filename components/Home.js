@@ -19,19 +19,19 @@ function Home({id}){
             <Bounce left duration={2000} delay={2000}>
                 <h1 className="text-center text-white text-6xl chewy-font mt-5 mb-4">Josh Sauder</h1>
             </Bounce>
-            <div className="flex justify-around">
+            <div className="flex justify-center px-32">
               <Slide top duration={2000}>
-                <div className="flex-initial ml-4">
+                <div className="flex-1 text-center">
                   <a href="mailto:joshsauder@gmail.com" title="Send me an email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                 </div>
               </Slide>
               <Slide top duration={2000}>
-                <div className="flex-initial">
+                <div className="flex-1 text-center">
                   <a href="https://www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
                 </div>
               </Slide>
               <Slide top duration={2000}>
-                <div className="flex-initial">
+                <div className="flex-1 text-center">
                   <a href="https://github.com/joshsauder" title="Github Profile" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-lg btn-social"></i></a>
                 </div>
               </Slide>
