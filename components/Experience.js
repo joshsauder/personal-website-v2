@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ExperienceModal from "./ExperienceModal";
+import ExperiencePopup from "./ExperiencePopup";
 import Slide from "react-reveal/Slide";
 import jobModal from "../data/jobModal.json";
 import {
@@ -7,11 +7,11 @@ import {
   CASModalData,
   OpenDemiaModalData,
   XPOModalData,
-} from "../data/modal";
+} from "../data/jobData";
 import "../css/About.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Experience = () => {
+const Experience = ({id}) => {
   const [modal, setModal] = useState("")
   //modal constants
   const NTI = "NTI"
@@ -41,11 +41,11 @@ const Experience = () => {
   };
 
   return (
-    <div id={this.props.id}>
-      <ExperienceModal modal={modal === NTI} onHide={() => setModal("")} jobDescription={NTIModalData} index={0} />
-      <ExperienceModal modal={modal === OPENDEMIA} onHide={() => setModal("")} jobDescription={OpenDemiaModalData} index={1} />
-      <ExperienceModal modal={modal === CAS} onHide={() => setModal("")} jobDescription={CASModalData} index={2}/>
-      <ExperienceModal modal={modal === XPO} onHide={() => setModal("")} jobDescription={XPOModalData} index={3}/>
+    <div id={id}>
+      <ExperiencePopup modal={modal === NTI} onHide={() => setModal("")} jobDescription={NTIModalData} index={0} />
+      <ExperiencePopup modal={modal === OPENDEMIA} onHide={() => setModal("")} jobDescription={OpenDemiaModalData} index={1} />
+      <ExperiencePopup modal={modal === CAS} onHide={() => setModal("")} jobDescription={CASModalData} index={2}/>
+      <ExperiencePopup modal={modal === XPO} onHide={() => setModal("")} jobDescription={XPOModalData} index={3}/>
       <div className="container">
           <Slide right>
               <div className="bg-white rounded p-6 shadow-lg">
