@@ -1,4 +1,3 @@
-import findByType from "./utils/FindByType"
 
 export const Title = ({children}) => {
     return (
@@ -18,18 +17,10 @@ export const Body = ({children}) => {
 
 const Modal = ({children, close}) => {
 
-    const renderTitle = () => findByType(children, Title)
-    const renderBody = () => findByType(children, Body)
-
     return (
-        <div className="z-50 h-screen w-full flex justify-center bg-white rounded">
-            <div className="p-8 mb-4">
-                {renderTitle()}
-            </div>
-            <div className="mb-4">
-                {renderBody()}
-            </div>
-            <button className="btn-outline-secondary" onclick={close}>Close</button>
+        <div className="z-50 h-screen w-full flex flex-col justify-center bg-white rounded">
+            {children}
+            <button className="btn-outline-secondary" onClick={close}>Close</button>
         </div>
     )
 }
