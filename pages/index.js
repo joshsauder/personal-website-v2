@@ -3,7 +3,9 @@ import Head from 'next/head'
 import Home from '../components/Home'
 import '../css/App.sass';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library, config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css' 
+config.autoAddCss = false 
 import {
   faGraduationCap, 
   faLaptopCode,
@@ -11,6 +13,7 @@ import {
   faServer, 
   faShippingFast, 
   faFlask,
+  faEnvelope
 } from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import Experience from '../components/Experience';
@@ -22,6 +25,7 @@ library.add(
   faServer,
   faShippingFast, 
   faFlask,
+  faEnvelope,
   fab
 )
 
@@ -33,10 +37,6 @@ export default function Index() {
           rel="stylesheet" 
           type="text/css" 
           href="//fonts.googleapis.com/css?family=Chewy" 
-        />
-        <link 
-        rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
         />
       </Head>
       <Home id="Home" />

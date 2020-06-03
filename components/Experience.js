@@ -26,7 +26,7 @@ const Experience = ({id}) => {
   const populateList = (list) => {
     return list.slice(0, 4).map((item, index) => (
       <div className="font-normal flex-1 text-center mt-5" key={index}>
-        <FontAwesomeIcon icon={item.icon} size="2x" />
+        <FontAwesomeIcon icon={item.icon} />
         <h4 className="mt-4">{item.title}</h4>
         <p className="mt-4">{item.company}</p>
         <p>{item.date}</p>
