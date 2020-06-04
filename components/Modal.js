@@ -1,4 +1,5 @@
 import "../css/Modal.sass"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Title = ({children}) => {
     return (
@@ -24,6 +25,9 @@ const Modal = ({children, close}) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
+            <button className="modal-close">
+                <FontAwesomeIcon icon="times" />
+            </button>
         </div>
     )
 }
