@@ -1,8 +1,39 @@
-.Modal 
-    position: fixed
-    top: 0
-    left: 0
-    z-index: 1050
-    overflow: hidden
-    display: block
+$modal-content-width: 640px !default
+$modal-content-margin-mobile: 20px !default
+$modal-content-spacing-mobile: 160px !default
+$modal-content-spacing-tablet: 40px !default
 
+$medium: 768px
+
+.modal 
+    position: fixed
+    align-items: center
+    display: none
+    flex-direction: column
+    justify-content: center
+    z-index: 40
+    &.is-active
+        display: flex
+
+.modal-backgroud
+    background-color: rgba(0,0 ,0 , 0.5)
+    position: absolute
+
+.modal .modal-backgroud
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.modal-content
+    margin: 0 $modal-content-margin-mobile
+    max-height: calc(100vh - #{$modal-content-spacing-mobile})
+    overflow: auto
+    position: relative
+    width: 100%
+    background-color: white
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    @media screen and (min-width: $medium)
+        width: 650px
+    

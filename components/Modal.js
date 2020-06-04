@@ -1,7 +1,8 @@
+import "../css/Modal.sass"
 
 export const Title = ({children}) => {
     return (
-        <div className="p-8 mb-4">
+        <div className="mb-4">
             {children}
         </div>
     )
@@ -18,8 +19,11 @@ export const Body = ({children}) => {
 const Modal = ({children, close}) => {
 
     return (
-        <div className="z-50 h-screen w-full flex flex-col justify-center bg-white rounded">
-            {children}
+        <div className="modal is-active">
+            <div className="modal-background"></div>
+            <div className="modal-content">
+                {children}
+            </div>
             <button className="btn-outline-secondary" onClick={close}>Close</button>
         </div>
     )
