@@ -19,12 +19,11 @@ export const Body = ({children}) => {
 const Modal = ({children, close}) => {
 
     return (
-        <div className="modal is-active">
+        <div className="modal is-active" onClick={close}>
             <div className="modal-background"></div>
-            <div className="modal-content">
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
-            <button className="btn-outline-secondary" onClick={close}>Close</button>
         </div>
     )
 }

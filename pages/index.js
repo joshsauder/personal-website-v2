@@ -13,7 +13,8 @@ import {
   faServer, 
   faShippingFast, 
   faFlask,
-  faEnvelope
+  faEnvelope,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import Experience from '../components/Experience';
@@ -26,6 +27,7 @@ library.add(
   faShippingFast, 
   faFlask,
   faEnvelope,
+  faTimes,
   fab
 )
 
