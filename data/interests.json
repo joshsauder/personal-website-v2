@@ -3,21 +3,25 @@
         "title": "Running",
         "description": "I'm sort of a self-proclaimed running fanatic. If you're wondering what I'm doing after work, there's a good chance I'm out running.",
         "funFact": ["I have run 2 full and 3 half marathons so far. Below is a list of the races I've run:", "Columbus Nationwide Childrens Hospital Marathon - 2016", "Toledo Glass City Marathon - 2015",
-                       "Cap City Half Marathon - 2019, 2016", "Jen Abby Memorial Half Marathon - 2014"]
+                       "Cap City Half Marathon - 2019, 2016", "Jen Abby Memorial Half Marathon - 2014"],
+        "image": "/Running.png"
     },
     {
         "title": "Ohio State Football",
         "description": "As you can probably guess, I'm a huge Ohio State Buckeye fan. I absolutely love watching and attending OSU football games.",
-        "funFact": ["As you can see by the picture on the left (or below if your viewing on a mobile device), I did travel to the Big House in 2018 to watch \"The Game.\" And yes, the Buckeyes did come out with a win!"]
+        "funFact": ["As you can see by the picture on the left (or below if your viewing on a mobile device), I did travel to the Big House in 2018 to watch \"The Game.\" And yes, the Buckeyes did come out with a win!"],
+        "image": "/OSU.png"
     },
     {
         "title": "Volunteer Work",
         "description": "I've always enjoyed helping those with special needs, and always loved participating in athletics. I also noticed that those with special needs werent't always given the opportunity to participate in athletics earlier in life.",
-        "funFact": ["I recently started volunteering at Special Olympic events and found it to be an awesome experience watching these individuals do things that others told them they couldn't. The encouragement and support they are given by the fans and volunteers is a fun sight to see, and gives the athletes an environment were they can be proud of there achievements."]
+        "funFact": ["I recently started volunteering at Special Olympic events and found it to be an awesome experience watching these individuals do things that others told them they couldn't. The encouragement and support they are given by the fans and volunteers is a fun sight to see, and gives the athletes an environment were they can be proud of there achievements."],
+        "image": "/SpecialOlympics.png"
     },
     {
         "title": "Travel",
         "description": "Traveling and exploring new places has always been something I try and do on a normal basis. It forces me to get out of my confort zone and exposes me to new cuisines, and experiences. It also allows me to venture around and see various places and landmarks.",
-        "funFact": ["My favorite place I've visted thus far would definetly be Barcelona. The gorgeous beaches, and tours of Camp Nou and the Basílica de la Sagrada Família were definetly the most memorable parts of Barcelona."]
+        "funFact": ["My favorite place I've visted thus far would definetly be Barcelona. The gorgeous beaches, and tours of Camp Nou and the Basílica de la Sagrada Família were definetly the most memorable parts of Barcelona."],
+        "image": "/Beach.png"
     }
 ]

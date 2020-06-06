@@ -1,17 +1,12 @@
 import React, {useState} from "react";
 import Slide from "react-reveal";
 import PersonalList from "../data/interests.json";
-import OSUPic from "../images/OSU.png";
-import BeachPic from "../images/Beach.png";
-import RunningPic from "../images/Running.png";
-import SpecialOlympics from "../images/SpecialOlympics.png";
-
 /*
 Renders each personal item
 list - the personal list item, 
 image - the applicable image
 */
-const PersonalTab = ({ list, image }) => {
+const PersonalTab = ({ list }) => {
   return (
     <div className="tab-pane fade show active" id={list.title} role="tabpanel">
       <div className="flex">
@@ -35,7 +30,7 @@ const PersonalTab = ({ list, image }) => {
             <img
               className="featurette-image img-fluid mx-auto rounded"
               alt="Logo"
-              src=""
+              src={list.image}
             />
           </div>
         </div>
@@ -50,13 +45,13 @@ function Interests({ id }) {
   let interest;
   //Show the personal item selected
   if (show === "Running") {
-    interest = <PersonalTab list={PersonalList[0]} image={RunningPic} />;
+    interest = <PersonalTab list={PersonalList[0]} />;
   } else if (show === "Ohio State Football") {
-    interest = <PersonalTab list={PersonalList[1]} image={OSUPic} />;
+    interest = <PersonalTab list={PersonalList[1]} />;
   } else if (show === "Volunteer Work") {
-    interest = <PersonalTab list={PersonalList[2]} image={SpecialOlympics} />;
+    interest = <PersonalTab list={PersonalList[2]}  />;
   } else if (show === "Travel") {
-    interest = <PersonalTab list={PersonalList[3]} image={BeachPic} />;
+    interest = <PersonalTab list={PersonalList[3]} />;
   }
 
   return (
@@ -69,12 +64,11 @@ function Interests({ id }) {
               <div className="w-1/4">
                 <ul className="flex flex-col">
                   {PersonalList.map((item) => (
-                    <li className="flex-1 mr-2">
+                    <li className="flex-1 mr-2" key={item.title}>
                         <a
-                        eventKey={item.title}
-                        key={item.title}
+                        id={item.title}
                         className="text-center block rounded py-2 px-4 navNotActive"
-                        onSelect={(selectedKey) => setShow(`${selectedKey}`)}
+                        onClick={(event) => setShow(event.target.id)}
                         >
                         {item.title}
                         </a>
