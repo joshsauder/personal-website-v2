@@ -31,8 +31,8 @@ const ExperienceModal = ({ modal, index, jobDescription, onHide }) => {
         {modal &&
             <Modal close={onHide}>
                 <Modal.Title>
-                <p className="modal-p">{JobList[index].title}</p>
-                <p className="modal-p">{JobList[index].date}</p>
+                <p>{JobList[index].title}</p>
+                <p>{JobList[index].date}</p>
                 </Modal.Title>
                 <Modal.Body>
                     <PopulateList list={jobDescription[0]} />
