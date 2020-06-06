@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ExperiencePopup from "./ExperiencePopup";
 import Slide from "react-reveal/Slide";
-import jobModal from "../data/jobModal.json";
+import jobModal from "../../data/jobModal.json";
 import {
   NTIModalData,
   CASModalData,
   OpenDemiaModalData,
   XPOModalData,
-} from "../data/jobData";
-import "../css/About.sass";
+} from "../../data/jobData";
+import "../../css/About.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Experience = ({id}) => {

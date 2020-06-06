@@ -17,8 +17,8 @@ import {
   faTimes
 } from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
-import Experience from '../components/Experience';
-import Education from '../components/Education';
+import Experience from '../components/Experience/Experience';
+import Education from '../components/Education/Education';
 
 library.add(
   faGraduationCap, 

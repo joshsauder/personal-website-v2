@@ -1,6 +1,6 @@
 import React from 'react';
-import JobList from '../data/jobModal.json'
-import Modal from './Modal'
+import JobList from '../../data/jobModal.json'
+import Modal from '../Modal'
 
 /*
 Populates each Modal with paragraph items 

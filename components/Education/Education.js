@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Slide from "react-reveal/Slide";
 import ExperienceModal from "./EducationModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EducationList from "../data/education.json";
-import { OSUModalData } from "../data/jobData";
+import EducationList from "../../data/education.json";
+import { OSUModalData } from "../../data/jobData";
 
 /*
 Populates each Featurette with paragraph items 
