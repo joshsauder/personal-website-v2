@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Home from '../components/Home'
-import '../css/App.sass';
+import '../sass/App.sass';
 
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css' 

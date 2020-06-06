@@ -1,4 +1,4 @@
-import "../css/Modal.sass"
+import "../sass/Modal.sass"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Title = ({children}) => {

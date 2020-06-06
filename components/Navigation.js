@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import "../css/navbar.sass"
+import "../sass/navbar.sass"
 
 function Navigation() {
   const [scroll, setScroll] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react'
 import App from 'next/app'
-import '../css/tailwind.scss'
+import '../sass/tailwind.scss'
 
 class MyApp extends App {
   render() {

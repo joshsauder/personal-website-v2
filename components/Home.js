@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Home.sass';
+import '../sass/Home.sass';
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Navigation from './Navigation';
