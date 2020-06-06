@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Degree",
+        "description": ["Bachelors of Science - Computer Science Engineering", "The Ohio State University"],
+        "icon": "graduation-cap"
+    },
+    {
+        "title": "Languages and Frameworks",
+        "description": ["Java, Swift, Javascript, HTML5, CSS, ReactJS, AngularJS, Bootstrap, NodeJS, ExpressJS, Spring MVC, MSSQL, MySQL, DynamoDB, MongoDB"],
+        "icon": "code"
+        
+    },
+    {
+        "title": "What I'm Learning", 
+        "description": [
+            "Currently - GraphQL, TailwindCSS, .Net Core",
+            "Upcoming - Gulp, Vapor (Server-side Swift framework), NextJS"
+        ],
+        "icon": "laptop-code"
+    }
+]
