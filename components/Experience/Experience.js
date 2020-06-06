@@ -8,7 +8,6 @@ import {
   OpenDemiaModalData,
   XPOModalData,
 } from "../../data/jobData";
-import "../../css/About.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Experience = ({id}) => {
