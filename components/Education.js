@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Jumbotron, Button } from "react-bootstrap";
 import Slide from "react-reveal/Slide";
 import ExperienceModal from "./ExperienceModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,24 +35,24 @@ function Education({ id }) {
         jobDescription={OSUModalData}
         index={4}
       />
-      <div className="container marketing">
+      <div className="bg-white rounded p-6 shadow-lg">
         <Slide left>
-          <Jumbotron className="shadow-lg">
+          <div className="shadow-lg">
             <h1 className="text-center chewy-font">Education</h1>
             <div className="featurette row">
               <PopulateList list={EducationList} />
             </div>
             <div className="row justify-content-center">
-              <Button
-                variant="outline-secondary"
+              <button
+                className="btn-outline-secondary"
                 onClick={() => {
                   setOSUModal(true);
                 }}
               >
                 Want to know more about my time at OSU?
-              </Button>
+              </button>
             </div>
-          </Jumbotron>
+          </div>
         </Slide>
         <hr className="featurette-divider" />
       </div>
