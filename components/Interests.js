@@ -10,15 +10,15 @@ const PersonalTab = ({ list }) => {
   return (
     <div className="tab-pane fade show active" id={list.title} role="tabpanel">
       <div className="flex">
-        <div className="w-2/3">
-          <div className="font-normal text-xl">{list.description}</div>
-          <div className="max-w-sm rounded overflow-hidden shadow-lg mx-3">
+        <div className="w-2/3 mx-3">
+          <div className="font-normal text-xl mb-3">{list.description}</div>
+          <div className="rounded overflow-hidden shadow-lg purpleBackground">
             <div className="px-6 py-4">
-                <div className="font-bold chewy-font text-center text-xl mb-2">
+                <div className="font-bold chewy-font text-center text-2xl mb-2">
                 Fun Fact
                 </div>
                 {list.funFact.map((item, index) => (
-                <div className="font-normal" key={index}>
+                <div className="font-normal text-xl" key={index}>
                     {item}
                 </div>
             ))}
@@ -65,13 +65,13 @@ function Interests({ id }) {
                 <ul className="flex flex-col">
                   {PersonalList.map((item) => (
                     <li className="flex-1 mr-2" key={item.title}>
-                        <a
-                        id={item.title}
-                        className="text-center block rounded py-2 px-4 navNotActive"
-                        onClick={(event) => setShow(event.target.id)}
+                        <button
+                            id={item.title}
+                            className={`w-11/12 text-left block rounded py-2 px-4 navNotActive ${show === item.title && "navActive"}`}
+                            onClick={(event) => setShow(event.target.id)}
                         >
                         {item.title}
-                        </a>
+                        </button>
                     </li>
                   ))}
                 </ul>
