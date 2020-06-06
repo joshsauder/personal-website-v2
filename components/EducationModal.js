@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import "../App.css";
-import "../styles/About.css";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+import React from "react";
+import Modal from "./Modal";
 import JobList from "../data/jobModal.json";
 
 /*
@@ -28,30 +25,22 @@ function PopulateTechList(props) {
 }
 
 const ExperienceModal = ({ modal, index, jobDescription, onHide }) => {
-  const [ExperienceShow, setExperienceShow] = useState(modal);
 
   return (
-    <Modal show={ExperienceShow} onHide={onHide}>
-      <Modal.Header closeButton>
-        <Modal.Title>
-          <p className="modal-p">{JobList[index].title}</p>
-          <p className="modal-p">{JobList[index].date}</p>
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <PopulateList list={jobDescription[0]} />
-        <PopulateTechList list={jobDescription[1]} />
-      </Modal.Body>
-      <Modal.Footer>
-        <Button
-          variant="outline-secondary"
-          onClick={onHide}
-          title="Close pop-up window"
-        >
-          Close
-        </Button>
-      </Modal.Footer>
-    </Modal>
+    <React.Fragment>
+        {modal &&
+            <Modal close={onHide}>
+                <Modal.Title>
+                <p className="modal-p">{JobList[index].title}</p>
+                <p className="modal-p">{JobList[index].date}</p>
+                </Modal.Title>
+                <Modal.Body>
+                    <PopulateList list={jobDescription[0]} />
+                    <PopulateTechList list={jobDescription[1]} />
+                </Modal.Body>
+            </Modal>
+        }
+    </React.Fragment>
   );
 };
 

@@ -56,6 +56,7 @@ const Experience = ({id}) => {
               </div>
           </Slide>
       </div>
+      <hr className="divider" />
   </div>
 )
 
