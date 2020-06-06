@@ -20,6 +20,7 @@ import {fab} from '@fortawesome/free-brands-svg-icons'
 import Experience from '../components/Experience/Experience';
 import Education from '../components/Education/Education';
 import Interests from '../components/Interests';
+import Projects from '../components/Projects';
 
 library.add(
   faGraduationCap, 
@@ -47,6 +48,7 @@ export default function Index() {
       <Experience id="Experince" />
       <Education id="Education" />
       <Interests id="Interest" />
+      <Projects id="Projects" />
     </React.Fragment>
   )
 }

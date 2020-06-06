@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ListItems from "./ListItems";
 import Slide from "react-reveal/Slide";
-import ContactForm from "./ContactForm";
+//import ContactForm from "./ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectList from "../data/projects.json";
 
@@ -25,44 +25,40 @@ const Projects = ({ id }) => {
   const renderProject = (list) => {
     return (
       <div className="tab-pane fade show active" id={list.name} role="tabpanel">
-        <div className="row">
-          <div className="col-lg-8">
-            <div className="lead">{list.description}</div>
-            <div className="lead mt-3">{list.techStack}</div>
-            <div className="mt-3 container row">
-              <Button
-                variant="outline-secondary"
-                className="mr-2 mb-2"
+        <div className="flex">
+          <div className="w-2/3">
+            <div className="font-normal text-xl">{list.description}</div>
+            <div className="font-normal text-xl mt-3">{list.techStack}</div>
+            <div className="mt-3 container flex items-start">
+              <button
+                className="mr-2 mb-2 btn-outline-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={list.github}
               >
                 <FontAwesomeIcon className="github" icon={["fab", "github"]} />{" "}
                 Github Repo
-              </Button>
-              <Button
-                variant="outline-secondary"
-                className="mr-2 mb-2"
+              </button>
+              <button
+                className="mr-2 mb-2 btn-outline-secondary"
                 onClick={() => updateState(true, `${list.name} Feedback`, false)}
                 title={"Give Feedback on" + list.name}
               >
                 Feedback
-              </Button>
+              </button>
               {list.project && (
                 <React.Fragment>
-                  <Button
-                    variant="outline-secondary"
-                    className="mr-2 mb-2"
+                  <button
+                    className="mr-2 mb-2 btn-outline-secondary"
                     target="_blank"
                     rel="noopener noreferrer"
                     href={list.project}
                   >
                     Website
-                  </Button>
+                  </button>
                   {list.article && (
-                    <Button
-                      variant="outline-secondary"
-                      className="mb-2"
+                    <button
+                      className="mb-2 btn-outline-secondary"
                       target="_blank"
                       rel="noopener noreferrer"
                       href={list.article}
@@ -72,7 +68,7 @@ const Projects = ({ id }) => {
                         icon={["fab", "medium"]}
                       />{" "}
                       Article
-                    </Button>
+                    </button>
                   )}
                 </React.Fragment>
               )}
@@ -91,7 +87,7 @@ const Projects = ({ id }) => {
               )}
             </div>
           </div>
-          <div className="col-lg-4 mt-2 mt-lg-2">
+          <div className="w-1/3 mt-2">
             <div className="featurette-img-align">
               <img
                 className="featurette-image img-fluid mx-auto rounded"
@@ -122,32 +118,26 @@ const Projects = ({ id }) => {
   return (
     <div id={id}>
       {/*<ContactForm modal={modal} onHide={() => setModal(false)} title={title} alert={alert} onClose={modalClose}/> */}
-      <div className="featurette-divider"></div>
-      <div className="container marketing">
+      <div className="container">
         <Slide left>
-          <Jumbotron className="shadow-lg">
-            <h1 className="text-center chewy-font mb-4">Projects</h1>
-            <div className="row">
-              <div className="col-lg-3">
-                <Nav
-                  className="flex-column"
-                  variant="pills"
-                  defaultActiveKey="InTheClear"
-                  onSelect={(selectedKey) => setShow(`${selectedKey}`)}
-                >
+            <div className="bg-white rounded p-6 shadow-lg">
+            <h1 className="text-center chewy-font text-3xl">Projects</h1>
+            <div className="flex">
+              <div className="w-1/4">
+                <ul className="flex flex-col">
                   {ProjectList.map((project) => (
-                    <ListItems project={project} key={project.name} />
+                    <ListItems project={project} key={project.name} select = {(event) => setShow(`${event.target.id}`)} current={show} />
                   ))}
-                </Nav>
+                </ul>
               </div>
-              <div className="col-lg-9">
+              <div className="w-3/4">
                 <div className="tab-content" id="tabContent">
                   {project}
                 </div>
                 <div></div>
               </div>
             </div>
-          </Jumbotron>
+          </div>
         </Slide>
         <div className="featurette-divider" />
       </div>
