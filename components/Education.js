@@ -10,13 +10,17 @@ Populates each Featurette with paragraph items
 */
 function PopulateList(props) {
   const populatedList = props.list.map((item, index) => (
-    <div className="lead col-md-4 text-center mt-4" key={index}>
-      <FontAwesomeIcon icon={item.icon} size="2x" />
-      <h4 className="font-normal text-xl" className="mt-4 mb-4 text-2xl font-bold">{item.title}</h4>
-      {item.description.map((description, index) => (
-        <p key={index}>{description}</p>
-      ))}
-    </div>
+    <React.Fragment key={index}>
+        <div className="text-center" key={index}>
+            <FontAwesomeIcon icon={item.icon} size="2x" />
+            <h4 className="font-bold text-2xl">{item.title}</h4>
+        </div>
+        <div className="row-span-2 mt-2">
+        {item.description.map((description, index) => (
+            <p className="font-normal text-xl" key={index}>{description}</p>
+        ))}
+        </div>
+    </React.Fragment>
   ));
   return populatedList;
 }
@@ -39,7 +43,7 @@ function Education({ id }) {
         <Slide left>
           <div className="shadow-lg bg-white rounded p-6">
             <h1 className="text-center chewy-font text-3xl">Education</h1>
-            <div className="featurette flex">
+            <div className="grid grid-rows-3 grid-flow-col col-gap-6 text-center mb-2 mt-4">
               <PopulateList list={EducationList} />
             </div>
             <div className="flex justify-center">
