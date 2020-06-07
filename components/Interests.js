@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Slide from "react-reveal";
 import PersonalList from "../data/interests.json";
 import '../sass/Card.sass'
+import ListItem from "./ListItems";
 /*
 Renders each personal item
 list - the personal list item, 
@@ -65,15 +66,7 @@ function Interests({ id }) {
               <div className="w-1/4">
                 <ul className="flex flex-col">
                   {PersonalList.map((item) => (
-                    <li className="flex-1 mr-2" key={item.title}>
-                        <button
-                            id={item.title}
-                            className={`w-11/12 text-left block rounded py-2 px-4 navNotActive ${show === item.title && "navActive"}`}
-                            onClick={(event) => setShow(event.target.id)}
-                        >
-                        {item.title}
-                        </button>
-                    </li>
+                    <ListItem project={item} key={item.title} select={(event) => setShow(event.target.id)} current={show}/> 
                   ))}
                 </ul>
               </div>

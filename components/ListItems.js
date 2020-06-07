@@ -13,7 +13,7 @@ function createList(item, select, show){
 export default function ListItem({project, key, select, current}) {
     const [show, setShow] = useState(true)
 
-    if(project.items.length > 1){
+    if(project.items && project.items.length > 1){
       return (
         <li className="flex-1 mr-2" key={key}>
             <button className="navNotActive dropdown-toggle" onClick={() => setShow(!show)}>{project.title}</button>
@@ -25,6 +25,6 @@ export default function ListItem({project, key, select, current}) {
         </li>
       )
     }else {
-      return createList(project.items[0], select, current)
+      return createList(project, select, current)
     }
 }
