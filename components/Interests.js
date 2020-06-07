@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Slide from "react-reveal";
 import PersonalList from "../data/interests.json";
+import '../sass/Card.sass'
 /*
 Renders each personal item
 list - the personal list item, 

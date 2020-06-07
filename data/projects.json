@@ -1,10 +1,9 @@
 [
     {
-        "name": "In The Clear",
+        "title": "In The Clear",
         "items": [
             {
-                "name": "In The Clear iOS App",
-                "eventKey": "InTheClear",
+                "title": "In The Clear iOS App",
                 "description": "iOS App that allows the user to determine what weather conditions they should expect to experience during their travels.",
                 "techStack": "Built using Swift; the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, Firebase (Authentication), Realm, AlamoFire, and SwiftyJSON.",
                 "github": "https://github.com/joshsauder/In-The-Clear",
@@ -13,8 +12,7 @@
                 
             },
             {
-                "name": "In The Clear Web",
-                "eventKey": "InTheClearWeb",
+                "title": "In The Clear Web",
                 "description": "A web app that gives the user all the functionality of the In The Clear iOS app.",
                 "techStack": "Built using ReactJS, Redux, Firebase (Authentication), Bootstrap, .Net Core, AWS Lambda, MSSQL, and Docker. Like the iOS app, Google Maps and Google Places were used.",
                 "github": "https://github.com/joshsauder/InTheClearWebV2",
@@ -22,8 +20,7 @@
                 "image": "/InTheClearFill.png"
             }, 
             {
-                "name": "In The Clear Home Page",
-                "eventKey": "InTheClearMain",
+                "title": "In The Clear Home Page",
                 "description": "The front facing webpage for In The Clear. It includes a list of features, updates, pricing, and privacy policy.",
                 "techStack": "Built using GatsbyJS, ReactJS, TailwindsCSS, and GraphQL",
                 "github": "https://github.com/joshsauder/InTheClearMainPage",
@@ -37,8 +34,7 @@
         "name": "Path Finding Visualizer",
         "items": [
             {
-                "name": "Path Finding Visualizer",
-                "eventKey": "PathFinder",
+                "title": "Path Finding Visualizer",
                 "description": "An iOS and Android application that allows pathfinding algorithms to be visualized in action. Current algorithms include Dijkstra's (unidirectional and bidirectional), A* (unidirectional and bidirectional), Breadth-First Search, and Depth-first Search.",
                 "techStack": "Built using React Native, Typescript, Expo, and Native Base.",
                 "github": "https://github.com/joshsauder/PathFindingVisualization",
@@ -52,8 +48,7 @@
         "name": "Personal Website",
         "items": [
             {
-                "name": "Personal Website",
-                "eventKey": "PersonalWebsite",
+                "title": "Personal Website",
                 "description": "A website that shows what I've done both professionally and in my free time.",
                 "techStack": "Built using ReactJS, Bootstrap, NodeJS, and Netlify Functions.",
                 "github": "https://github.com/joshsauder/personal-website",

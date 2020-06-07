@@ -6,16 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectList from "../data/projects.json";
 
 const Projects = ({ id }) => {
-  const [show, setShow] = useState("InTheClear");
-  const [modal, setModal] = useState(false);
-  const [title, setTitle] = useState("");
-  const [alert, setAlert] = useState(false);
-
-  const updateState = (modal, title, alert) => {
-      setModal(modal)
-      setTitle(title)
-      setAlert(alert)
-  }
+  const [show, setShow] = useState("In The Clear iOS App");
 
   /*
   Renders each project
@@ -41,7 +32,7 @@ const Projects = ({ id }) => {
               </button>
               <button
                 className="mr-2 mb-2 btn-outline-secondary"
-                onClick={() => updateState(true, `${list.name} Feedback`, false)}
+                onClick={() => console.log("Needs to be implemented")}
                 title={"Give Feedback on" + list.name}
               >
                 Feedback
@@ -103,15 +94,15 @@ const Projects = ({ id }) => {
 
   let project;
   //Render the selected project
-  if (show === "InTheClear") {
+  if (show === "In The Clear" || show === "In The Clear iOS App") {
     project = renderProject(ProjectList[0].items[0]);
-  } else if (show === "InTheClearWeb") {
+  } else if (show === "In The Clear Web") {
     project = renderProject(ProjectList[0].items[1]);
-  } else if (show === "InTheClearMain") {
+  } else if (show === "In The Clear Home Page") {
     project = renderProject(ProjectList[0].items[2]);
-  } else if (show === "PathFinder") {
+  } else if (show === "Path Finding Visualizer") {
     project = renderProject(ProjectList[1].items[0]);
-  } else if (show === "PersonalWebsite") {
+  } else if (show === "Personal Website") {
     project = renderProject(ProjectList[2].items[0]);
   }
 
@@ -126,7 +117,7 @@ const Projects = ({ id }) => {
               <div className="w-1/4">
                 <ul className="flex flex-col">
                   {ProjectList.map((project) => (
-                    <ListItems project={project} key={project.name} select = {(event) => setShow(`${event.target.id}`)} current={show} />
+                    <ListItems project={project} key={project.title} select = {(event) => setShow(`${event.target.id}`)} current={show} />
                   ))}
                 </ul>
               </div>
