@@ -117,15 +117,12 @@ const Projects = ({ id }) => {
               <div className="w-1/4">
                 <ul className="flex flex-col">
                   {ProjectList.map((project) => (
-                    <ListItems project={project} key={project.title} select = {(event) => setShow(`${event.target.id}`)} current={show} />
+                    <ListItems project={project} idx={project.title} select = {(event) => setShow(`${event.target.id}`)} current={show} />
                   ))}
                 </ul>
               </div>
               <div className="w-3/4">
-                <div className="tab-content" id="tabContent">
-                  {project}
-                </div>
-                <div></div>
+                {project}
               </div>
             </div>
           </div>

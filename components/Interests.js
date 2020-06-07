@@ -42,19 +42,7 @@ const PersonalTab = ({ list }) => {
 };
 
 function Interests({ id }) {
-  const [show, setShow] = useState("Running");
-
-  let interest;
-  //Show the personal item selected
-  if (show === "Running") {
-    interest = <PersonalTab list={PersonalList[0]} />;
-  } else if (show === "Ohio State Football") {
-    interest = <PersonalTab list={PersonalList[1]} />;
-  } else if (show === "Volunteer Work") {
-    interest = <PersonalTab list={PersonalList[2]}  />;
-  } else if (show === "Travel") {
-    interest = <PersonalTab list={PersonalList[3]} />;
-  }
+  const [show, setShow] = useState(0);
 
   return (
     <div id={id}>
@@ -65,14 +53,14 @@ function Interests({ id }) {
             <div className="flex">
               <div className="w-1/4">
                 <ul className="flex flex-col">
-                  {PersonalList.map((item) => (
-                    <ListItem project={item} key={item.title} select={(event) => setShow(event.target.id)} current={show}/> 
+                  {PersonalList.map((item, index) => (
+                    <ListItem project={item} idx={index} select={(event) => setShow(event.target.id)} current={show}/> 
                   ))}
                 </ul>
               </div>
               <div className="w-3/4">
                 <div className="tab-content" id="tabContent">
-                  {interest}
+                  <PersonalTab list={PersonalList[show]}/>
                 </div>
               </div>
             </div>
