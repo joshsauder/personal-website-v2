@@ -20,7 +20,7 @@ import {fab} from '@fortawesome/free-brands-svg-icons'
 import Experience from '../components/Experience/Experience';
 import Education from '../components/Education/Education';
 import Interests from '../components/Interests';
-import Projects from '../components/Projects';
+import Projects from '../components/Project/Projects';
 
 library.add(
   faGraduationCap, 

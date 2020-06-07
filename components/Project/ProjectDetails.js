@@ -1,19 +1,12 @@
-import React, { useState } from "react";
-import ListItems from "./ListItems";
-import Slide from "react-reveal/Slide";
-//import ContactForm from "./ContactForm";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ProjectList from "../data/projects.json";
 
-const Projects = ({ id }) => {
-  const [show, setShow] = useState("In The Clear iOS App");
-
-  /*
+ /*
   Renders each project
   list - project list from ProjectList
   logo - applicable image
   */
-  const renderProject = (list) => {
+ const ProjectDetails = ({list}) => {
     return (
       <div className="tab-pane fade show active" id={list.name} role="tabpanel">
         <div className="flex">
@@ -92,45 +85,4 @@ const Projects = ({ id }) => {
     );
   };
 
-  let project;
-  //Render the selected project
-  if (show === "In The Clear" || show === "In The Clear iOS App") {
-    project = renderProject(ProjectList[0].items[0]);
-  } else if (show === "In The Clear Web") {
-    project = renderProject(ProjectList[0].items[1]);
-  } else if (show === "In The Clear Home Page") {
-    project = renderProject(ProjectList[0].items[2]);
-  } else if (show === "Path Finding Visualizer") {
-    project = renderProject(ProjectList[1].items[0]);
-  } else if (show === "Personal Website") {
-    project = renderProject(ProjectList[2].items[0]);
-  }
-
-  return (
-    <div id={id}>
-      {/*<ContactForm modal={modal} onHide={() => setModal(false)} title={title} alert={alert} onClose={modalClose}/> */}
-      <div className="container">
-        <Slide left>
-            <div className="bg-white rounded p-6 shadow-lg">
-            <h1 className="text-center chewy-font text-3xl">Projects</h1>
-            <div className="flex">
-              <div className="w-1/4">
-                <ul className="flex flex-col">
-                  {ProjectList.map((project) => (
-                    <ListItems project={project} idx={project.title} select = {(event) => setShow(`${event.target.id}`)} current={show} />
-                  ))}
-                </ul>
-              </div>
-              <div className="w-3/4">
-                {project}
-              </div>
-            </div>
-          </div>
-        </Slide>
-        <div className="featurette-divider" />
-      </div>
-    </div>
-  );
-};
-
-export default Projects;
+  export default ProjectDetails
