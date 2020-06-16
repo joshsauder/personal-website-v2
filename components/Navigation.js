@@ -5,9 +5,11 @@ import "../sass/navbar.sass"
 function Navigation() {
   const [scroll, setScroll] = useState(false);
   const navRef = useRef(null);
+  
 
   //add scroll event listener
   useEffect(() => window.addEventListener("scroll", setScrollPos), [])
+  useEffect(() => navRef.current.classList.toggle("hidden"), [])
 
   /*
     If position moves, determine if the nav bar should be transparant or not
