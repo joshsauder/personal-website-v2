@@ -25,10 +25,10 @@ function Navigation() {
 
   return (
     <div className="nav-fixed-top">
-      <nav className={`flex items-center justify-between flex-wrap p-6 ${scroll ? "bg-darkPurple" : ""}`}>
+      <nav className={`flex items-center chewy-font justify-between flex-wrap p-6 ${scroll ? "bg-darkPurple" : ""}`}>
       
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-            <span className="chewy-font text-xl tracking-tight font-semibold">Josh Sauder</span>
+            <span className="text-2xl tracking-tight font-semibold">Josh Sauder</span>
         </div>
 
         <div className="block lg:hidden">
@@ -38,7 +38,7 @@ function Navigation() {
         </div>
       
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto" ref={navRef}>
-          <div className="text-sm lg:flex-grow">
+          <div className="text-lg lg:flex-grow">
             <Link
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
