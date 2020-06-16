@@ -4,7 +4,7 @@ function createList(item, select, show, idx) {
   return (
     <button
       id={idx}
-      className={`w-11/12 text-left block rounded py-2 px-4 navNotActive ${
+      className={`w-11/12 text-left block rounded py-2 px-4 my-1 navNotActive ${
         show == idx ? "navActive" : ""
       }`}
       onClick={select}
@@ -22,7 +22,7 @@ export default function ListItem({ project, idx, select, current }) {
       {project.items && project.items.length > 1 ? (
         <React.Fragment>
           <button
-            className="navNotActive dropdown-toggle"
+            className="navNotActive dropdown-toggle rounded"
             onClick={() => setShow(!show)}
           >
             {project.title}

@@ -32,7 +32,7 @@ const Projects = ({ id }) => {
         <Slide left>
             <div className="bg-white rounded p-6 shadow-lg">
             <h1 className="text-center chewy-font text-3xl">Projects</h1>
-            <div className="flex">
+            <div className="flex mt-4">
               <div className="w-1/4">
                 <ul className="flex flex-col">
                   {ProjectList.map((project) => (

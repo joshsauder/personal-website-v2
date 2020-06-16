@@ -24,7 +24,7 @@ const Experience = ({id}) => {
     */
   const populateList = (list) => {
     return list.slice(0, 4).map((item, index) => (
-      <div className="flex-1 text-center mt-5 mx-4" key={index}>
+      <div className="flex-1 text-center mx-4" key={index}>
         <FontAwesomeIcon icon={item.icon} size="3x"/>
         <h4 className="mt-4 font-bold text-2xl">{item.title}</h4>
         <p className="mt-4 font-normal text-xl">{item.company}</p>
@@ -49,7 +49,7 @@ const Experience = ({id}) => {
           <Slide right>
               <div className="bg-white rounded p-6 shadow-lg">
                   <h1 className="text-center chewy-font text-3xl">Work Experience</h1>
-                  <div className="flex">
+                  <div className="flex mt-4">
                       {populateList(jobModal)}
                   </div>
               </div>
