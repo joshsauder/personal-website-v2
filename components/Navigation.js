@@ -90,7 +90,7 @@ function Navigation() {
             <Link
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
                 activeClass="active"
-                to="Education"
+                to="Projects"
                 href="#"
                 spy={true}
                 smooth={true}

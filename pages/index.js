@@ -45,9 +45,9 @@ export default function Index() {
         />
       </Head>
       <Home id="Home" />
-      <Experience id="Experince" />
+      <Experience id="Experience" />
       <Education id="Education" />
-      <Interests id="Interest" />
+      <Interests id="Interests" />
       <Projects id="Projects" />
     </React.Fragment>
   )
