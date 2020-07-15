@@ -39,12 +39,14 @@ const Experience = ({id}) => {
     ));
   };
 
+  const closeModal = () => setModal("")
+
   return (
     <div id={id}>
-      <ExperiencePopup modal={modal === OPENDEMIA} onHide={() => setModal("")} jobDescription={OpenDemiaModalData} index={0} />
-      <ExperiencePopup modal={modal === NTI} onHide={() => setModal("")} jobDescription={NTIModalData} index={1} />
-      <ExperiencePopup modal={modal === CAS} onHide={() => setModal("")} jobDescription={CASModalData} index={2}/>
-      <ExperiencePopup modal={modal === XPO} onHide={() => setModal("")} jobDescription={XPOModalData} index={3}/>
+      <ExperiencePopup modal={modal === OPENDEMIA} onHide={closeModal} jobDescription={OpenDemiaModalData} index={0} />
+      <ExperiencePopup modal={modal === NTI} onHide={closeModal} jobDescription={NTIModalData} index={1} />
+      <ExperiencePopup modal={modal === CAS} onHide={closeModal} jobDescription={CASModalData} index={2}/>
+      <ExperiencePopup modal={modal === XPO} onHide={closeModal} jobDescription={XPOModalData} index={3}/>
       <div className="container">
           <Slide right>
               <div className="bg-white rounded p-6 shadow-lg">
