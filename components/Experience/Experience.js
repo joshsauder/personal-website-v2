@@ -41,8 +41,8 @@ const Experience = ({id}) => {
 
   return (
     <div id={id}>
-      <ExperiencePopup modal={modal === NTI} onHide={() => setModal("")} jobDescription={NTIModalData} index={0} />
-      <ExperiencePopup modal={modal === OPENDEMIA} onHide={() => setModal("")} jobDescription={OpenDemiaModalData} index={1} />
+      <ExperiencePopup modal={modal === OPENDEMIA} onHide={() => setModal("")} jobDescription={OpenDemiaModalData} index={0} />
+      <ExperiencePopup modal={modal === NTI} onHide={() => setModal("")} jobDescription={NTIModalData} index={1} />
       <ExperiencePopup modal={modal === CAS} onHide={() => setModal("")} jobDescription={CASModalData} index={2}/>
       <ExperiencePopup modal={modal === XPO} onHide={() => setModal("")} jobDescription={XPOModalData} index={3}/>
       <div className="container">

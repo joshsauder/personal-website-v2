@@ -1,12 +1,12 @@
 export const NTIModalData = [
     [
-        "I am currently working with customers to implement any projects they are currently pursuing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",
-        "Customers also come up with ways to use our product that have not been attempted yet, and it's my job to test it in the manner they want to use it and ensure that I'm able to provide adequate support.",
-        "On top of the above, this job really involves a lot of communication. I have numerous meetings with customers (both scheduled and after-hours when a production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a solution. It also requires you to be able to explain technical detail in a concise and efficient manner.",
+        "I worked with customers to implement any projects they were pursuing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",
+        "Customers also come up with ways to use NTI's product that have not been attempted yet, and it was my job to test it in the manner they want to use it and ensure that I was able to provide adequate support.",
+        "On top of the above, this job really involves a lot of communication. I had numerous meetings with customers (both scheduled and after-hours when a production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a solution. It also requires you to be able to explain technical detail in a concise and efficient manner.",
         "Technologies used:"
     ],
     [
-        "MSSQL, Oracle SQL, MySQL",
+        "MSSQL, Oracle SQL, MySQL, Python, Java",
         "Replicating data from a HPE NonStop to another HPE Nonstop, AWS RDS, Oracle, SQL Server, Splunk.",
     ]
 

@@ -1,17 +1,17 @@
 [
     {
-        "company": "Network Technologies International",
-        "title": "Software Engineer",
-        "date": "June 2018 - Present",
-        "modal": "NTI",
-        "icon": "server"
-    },
-    {
         "company": "Opendemia",
         "title": "Software Engineer (Part-Time)",
         "date": "August 2019 - Present",
-        "modal": "OD",
+        "modal": "ODModal",
         "icon": "graduation-cap"
+    },
+    {
+        "company": "Network Technologies International",
+        "title": "Software Engineer",
+        "date": "June 2018 - July 2020",
+        "modal": "NTIModal",
+        "icon": "server"
     },
     {
         "company": "Chemical Abstract Services",
