@@ -1,5 +1,6 @@
 import "../sass/Modal.sass"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { useEffect } from "react"
 
 export const Title = ({children}) => {
     return (
@@ -19,9 +20,14 @@ export const Body = ({children}) => {
 
 const Modal = ({children, close}) => {
 
+    useEffect(() => {
+        const darkenBG = document.createElement("div")
+        darkenBG.className = "modal-background"
+        document.body.appendChild(darkenBG)
+    }, [])
+
     return (
         <div className="modal is-active" onClick={close}>
-            <div className="modal-background"></div>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>

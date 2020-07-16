@@ -16,15 +16,17 @@ $medium: 768px
     display: none
     flex-direction: column
     justify-content: center
-    z-index: 40
+    z-index: 1050
     @extend .full-screen
     &.is-active
         display: flex
 
 .modal-background
-    background-color: rgba(0,0 ,0 , 0.5)
-    position: absolute
+    opacity: 0.5
+    background-color: #000
+    position: fixed
     @extend .full-screen
+    z-index: 1040
 
 .modal-content
     margin: 0 $modal-content-margin-mobile
