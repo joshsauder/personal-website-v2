@@ -22,12 +22,19 @@ const Modal = ({children, close}) => {
 
     useEffect(() => {
         const darkenBG = document.createElement("div")
+        darkenBG.id = "darkenBG"
         darkenBG.className = "modal-background"
         document.body.appendChild(darkenBG)
     }, [])
 
+    const closeBG = () => {
+        const darkenBG = document.getElementById("darkenBG")
+        darkenBG.remove()
+        close()
+    }
+
     return (
-        <div className="modal is-active" onClick={close}>
+        <div className="modal is-active" onClick={closeBG}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
