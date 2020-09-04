@@ -28,13 +28,17 @@ const Modal = ({children, close}) => {
     }, [])
 
     const closeBG = () => {
-        const darkenBG = document.getElementById("darkenBG")
-        darkenBG.remove()
-        close()
+        const model = document.getElementById("model")
+        model.className = "modal is-disabled"
+        setTimeout(() => {
+            const darkenBG = document.getElementById("darkenBG")
+            darkenBG.remove()
+            close()
+        }, 200)
     }
 
     return (
-        <div className="modal is-active" onClick={closeBG}>
+        <div id="model" className="modal is-active" onClick={closeBG}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
