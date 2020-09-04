@@ -1,5 +1,12 @@
 [
     {
+        "company": "Mindera",
+        "title": "Backend Software Developer",
+        "date": "July 2020 - Present",
+        "modal": "MinderaModal",
+        "icon": "user-friends"
+    },
+    {
         "company": "Opendemia",
         "title": "Software Engineer (Part-Time)",
         "date": "August 2019 - Present",
@@ -17,14 +24,14 @@
         "company": "Chemical Abstract Services",
         "title": "Software Engineering Co-Op",
         "date": "May 2017 - May 2018",
-        "modal": "CAS",
+        "modal": "CASModal",
         "icon": "flask"
     },
     {
         "company": "XPO Logistics",
         "title": "IT Intern",
         "date": "June 2016 - August 2016",
-        "modal": "XPO",
+        "modal": "XPOModal",
         "icon": "shipping-fast"
     },
     {

@@ -1,15 +1,11 @@
-export const NTIModalData = [
+export const MinderaModalData = [
     [
-        "I worked with customers to implement any projects they were pursuing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",
-        "Customers also come up with ways to use NTI's product that have not been attempted yet, and it was my job to test it in the manner they want to use it and ensure that I was able to provide adequate support.",
-        "On top of the above, this job really involves a lot of communication. I had numerous meetings with customers (both scheduled and after-hours when a production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a solution. It also requires you to be able to explain technical detail in a concise and efficient manner.",
-        "Technologies used:"
+        "Coming Soon!",
+        "Technologies Used:"
     ],
     [
-        "MSSQL, Oracle SQL, MySQL, Python, Java",
-        "Replicating data from a HPE NonStop to another HPE Nonstop, AWS RDS, Oracle, SQL Server, Splunk.",
+        "Also, Coming Soon!"
     ]
-
 ]
 
 export const OpenDemiaModalData = [
@@ -26,6 +22,20 @@ export const OpenDemiaModalData = [
         "Back-End: Amazon AWS (ECS, ECR, S3, DyanamoDB, Lambda), Spring Boot, Java EE, Kotlin",
         "Project Management: Trello, Git, Figma"
     ]
+]
+
+export const NTIModalData = [
+    [
+        "I worked with customers to implement any projects they were pursuing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",
+        "Customers also come up with ways to use NTI's product that have not been attempted yet, and it was my job to test it in the manner they want to use it and ensure that I was able to provide adequate support.",
+        "On top of the above, this job really involves a lot of communication. I had numerous meetings with customers (both scheduled and after-hours when a production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a solution. It also requires you to be able to explain technical detail in a concise and efficient manner.",
+        "Technologies used:"
+    ],
+    [
+        "MSSQL, Oracle SQL, MySQL, Python, Java",
+        "Replicating data from a HPE NonStop to another HPE Nonstop, AWS RDS, Oracle, SQL Server, Splunk.",
+    ]
+
 ]
 
 export const OSUModalData = [
