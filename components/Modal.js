@@ -4,7 +4,7 @@ import React, { useEffect } from "react"
 
 export const Title = ({children}) => {
     return (
-        <div className="mb-4">
+        <div className="mb-4 text-center text-xl font-semibold">
             {children}
         </div>
     )

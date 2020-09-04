@@ -8,7 +8,7 @@ Populates each Modal with paragraph items
 function PopulateList(props){
   var experienceList = props.list
   const populatedList = experienceList.map((item, index) =>
-    <p key={index}>
+    <p key={index} className="mb-2 italic">
       {item}
     </p>
   )
@@ -21,12 +21,12 @@ Populates each list
 function PopulateTechList(props){
   var experienceTechList = props.list
   const populatedList = experienceTechList.map((item, index) =>
-  <li key={index}>
+  <li key={index} className="mb-2 ml-4 italic">
     {item}
   </li>
   )
   return(
-    <ul>{populatedList}</ul>
+    <ul className="list-disc">{populatedList}</ul>
   );
 }
 
