@@ -46,7 +46,7 @@ const Projects = ({ id }) => {
             </div>
           </div>
         </Slide>
-        <hr className="mb-20" />
+        <hr className="md:mb-32 mb-16" />
       </div>
     </div>
   );

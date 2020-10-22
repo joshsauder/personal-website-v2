@@ -42,44 +42,44 @@ function Navigation() {
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto" ref={navRef}>
           <div className="text-lg lg:flex-grow">
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
-                activeClass="active"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
+                activeClass="text-opacity-100"
                 to="Home"
                 href="#"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-200}
                 duration={400}
               >
                 Home
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
-                activeClass="active"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
+                activeClass="text-opacity-100"
                 to="Experience"
                 href="#"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-200}
                 duration={400}
               >
                 Experience
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
-                activeClass="active"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
+                activeClass="text-opacity-100"
                 to="Education"
                 href="#"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-200}
                 duration={400}
               >
                 Education
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
-                activeClass="active"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
+                activeClass="text-opacity-100"
                 to="Interests"
                 href="#"
                 spy={true}
@@ -90,8 +90,8 @@ function Navigation() {
                 Interests
             </Link>
             <Link
-                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
-                activeClass="active"
+                className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
+                activeClass="text-opacity-100"
                 to="Projects"
                 href="#"
                 spy={true}
