@@ -25,7 +25,7 @@ function Home({id}){
                 <div className="flex-1 text-center">
                   <a href="mailto:joshsauder@gmail.com" title="Send me an email">
                     <i className="btn-social fa-envelope">
-                      <FontAwesomeIcon icon="envelope"/>
+                      <FontAwesomeIcon icon="envelope" size="lg" />
                     </i>
                   </a>
                 </div>
@@ -34,7 +34,7 @@ function Home({id}){
                 <div className="flex-1 text-center">
                   <a href="https://www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
                     <i className="btn-social fa-linkedin">
-                      <FontAwesomeIcon icon={['fab', 'linkedin-in']}/>
+                      <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="lg" />
                     </i>
                   </a>
                 </div>
@@ -43,7 +43,7 @@ function Home({id}){
                 <div className="flex-1 text-center">
                   <a href="https://github.com/joshsauder" title="Github Profile" target="_blank" rel="noopener noreferrer">
                     <i className="btn-social fa-github">
-                      <FontAwesomeIcon icon={['fab', "github"]}/>
+                      <FontAwesomeIcon icon={['fab', "github"]} size="lg" />
                     </i>
                   </a>
                 </div>
