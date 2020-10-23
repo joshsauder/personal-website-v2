@@ -24,13 +24,13 @@ const Experience = ({id}) => {
     */
   const populateList = (list) => {
     return list.slice(0, 4).map((item, index) => (
-      <div className="flex-1 text-center mx-4" key={index}>
+      <div className="md:flex-1 md:mt-0 mt-12 text-center mx-4" key={index}>
         <FontAwesomeIcon icon={item.icon} size="3x"/>
-        <h4 className="mt-4 font-bold text-2xl">{item.title}</h4>
-        <p className="mt-4 font-normal text-xl">{item.company}</p>
-        <p className="mt-4 font-normal text-xl">{item.date}</p>
+        <h4 className="md:mt-4 mt-2 font-bold text-2xl">{item.title}</h4>
+        <p className="md:mt-4 mt-2 font-normal text-xl">{item.company}</p>
+        <p className="md:mt-4 mt-2 font-normal text-xl">{item.date}</p>
         <button
-          className="btn-outline-secondary mt-4"
+          className="btn-outline-secondary md:mt-4 mt-2"
           onClick={() => setModal(item.modal)}
         >
           More Info
@@ -51,7 +51,7 @@ const Experience = ({id}) => {
           <Slide right>
               <div className="bg-white rounded p-6 shadow-lg">
                   <h1 className="text-center chewy-font text-3xl">Work Experience</h1>
-                  <div className="flex mt-4">
+                  <div className="md:flex mt-4">
                       {populateList(jobModal)}
                   </div>
               </div>

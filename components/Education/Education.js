@@ -15,7 +15,7 @@ function PopulateList(props) {
             <FontAwesomeIcon icon={item.icon} size="2x" />
             <h4 className="font-bold text-2xl">{item.title}</h4>
         </div>
-        <div className="row-span-2 mt-2">
+        <div className="md:row-span-2 mt-2 md:mb-0 mb-12">
         {item.description.map((description, index) => (
             <p className="font-normal text-xl" key={index}>{description}</p>
         ))}
@@ -43,7 +43,7 @@ function Education({ id }) {
         <Slide left>
           <div className="shadow-lg bg-white rounded p-6">
             <h1 className="text-center chewy-font text-3xl">Education</h1>
-            <div className="grid grid-rows-3 grid-flow-col col-gap-6 text-center mb-2 mt-4">
+            <div className="grid md:grid-rows-3 md:grid-flow-col grid-flow-row col-gap-6 text-center mb-2 mt-4">
               <PopulateList list={EducationList} />
             </div>
             <div className="flex justify-center">

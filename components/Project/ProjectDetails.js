@@ -9,11 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  const ProjectDetails = ({list}) => {
     return (
       <div className="tab-pane fade show active" id={list.name} role="tabpanel">
-        <div className="flex">
-          <div className="w-2/3">
+        <div className="md:flex">
+          <div className="md:w-2/3">
             <div className="font-normal text-xl">{list.description}</div>
             <div className="font-normal text-xl mt-3">{list.techStack}</div>
-            <div className="mt-3 container flex items-start">
+            <div className="mt-3 flex items-start">
               <button
                 className="mr-2 mb-2 btn-outline-secondary"
                 target="_blank"
@@ -71,7 +71,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
               )}
             </div>
           </div>
-          <div className="w-1/3 mt-2">
+          <div className="md:w-1/3 md:mt-2">
             <div className="featurette-img-align">
               <img
                 className="featurette-image img-fluid mx-auto rounded"

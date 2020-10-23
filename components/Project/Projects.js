@@ -32,15 +32,15 @@ const Projects = ({ id }) => {
         <Slide left>
             <div className="bg-white rounded p-6 shadow-lg">
             <h1 className="text-center chewy-font text-3xl">Projects</h1>
-            <div className="flex mt-4">
-              <div className="w-1/4">
+            <div className="md:flex mt-4">
+              <div className="md:w-1/4">
                 <ul className="flex flex-col">
                   {ProjectList.map((project) => (
                     <ListItems project={project} idx={project.title} select = {(event) => setShow(`${event.target.id}`)} current={show} />
                   ))}
                 </ul>
               </div>
-              <div className="w-3/4">
+              <div className="md:w-3/4">
                 <ProjectDetails list={project}/>
               </div>
             </div>

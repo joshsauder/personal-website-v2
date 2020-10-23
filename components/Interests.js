@@ -11,8 +11,8 @@ image - the applicable image
 const PersonalTab = ({ list }) => {
   return (
     <div className="tab-pane fade show active" id={list.title} role="tabpanel">
-      <div className="flex">
-        <div className="w-2/3 mx-3">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-2/3 mx-3">
           <div className="font-normal text-xl mb-3">{list.description}</div>
           <div className="rounded overflow-hidden shadow-lg purpleBackground">
             <div className="px-6 py-4">
@@ -27,7 +27,7 @@ const PersonalTab = ({ list }) => {
           </div>
         </div>
         </div>
-        <div className="w-1/3">
+        <div className="md:w-1/3 md:mt-0 mt-3">
           <div className="featurette-img-align">
             <img
               className="featurette-image img-fluid mx-auto rounded"
@@ -50,15 +50,15 @@ function Interests({ id }) {
         <Slide right>
           <div className="bg-white rounded p-6 shadow-lg">
             <h1 className="text-center chewy-font text-3xl">Interests</h1>
-            <div className="flex mt-4">
-              <div className="w-1/4">
+            <div className="md:flex mt-4">
+              <div className="md:w-1/4">
                 <ul className="flex flex-col">
                   {PersonalList.map((item, index) => (
                     <ListItem project={item} idx={index} select={(event) => setShow(event.target.id)} current={show}/> 
                   ))}
                 </ul>
               </div>
-              <div className="w-3/4">
+              <div className="md:w-3/4">
                 <div className="tab-content" id="tabContent">
                   <PersonalTab list={PersonalList[show]}/>
                 </div>
