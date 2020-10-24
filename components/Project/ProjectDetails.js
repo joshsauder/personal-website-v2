@@ -14,44 +14,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
             <div className="font-normal text-xl">{list.description}</div>
             <div className="font-normal text-xl mt-3">{list.techStack}</div>
             <div className="mt-3 flex items-start">
-              <button
-                className="mr-2 mb-2 btn-outline-secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={list.github}
-              >
-                <FontAwesomeIcon className="github" icon={["fab", "github"]} />{" "}
-                Github Repo
-              </button>
-              <button
-                className="mr-2 mb-2 btn-outline-secondary"
-                onClick={() => console.log("Needs to be implemented")}
-                title={"Give Feedback on" + list.name}
-              >
-                Feedback
+              <button className="mr-2 mb-2 btn-outline-secondary">
+                <a                 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={list.github}
+                >
+                  <FontAwesomeIcon className="github" icon={["fab", "github"]} />{" "}
+                  Github Repo
+                </a>
               </button>
               {list.project && (
                 <React.Fragment>
-                  <button
-                    className="mr-2 mb-2 btn-outline-secondary"
+                  <button className="mr-2 mb-2 btn-outline-secondary">
+                    <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={list.project}
-                  >
-                    Website
+                    >
+                      Website
+                    </a>
                   </button>
                   {list.article && (
-                    <button
-                      className="mb-2 btn-outline-secondary"
+                    <button className="mb-2 btn-outline-secondary">
+                      <a
                       target="_blank"
                       rel="noopener noreferrer"
                       href={list.article}
-                    >
-                      <FontAwesomeIcon
-                        className="github"
-                        icon={["fab", "medium"]}
-                      />{" "}
-                      Article
+                      >
+                        <FontAwesomeIcon
+                          className="github"
+                          icon={["fab", "medium"]}
+                        />{" "}
+                        Article
+                      </a>
                     </button>
                   )}
                 </React.Fragment>

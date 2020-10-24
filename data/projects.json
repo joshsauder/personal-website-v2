@@ -50,7 +50,7 @@
             {
                 "title": "Personal Website",
                 "description": "A website that shows what I've done both professionally and in my free time.",
-                "techStack": "Built using ReactJS, NextJS, TailwindCSS, Sass, NodeJS, and Netlify Functions.",
+                "techStack": "Built using ReactJS, NextJS, TailwindCSS, Sass, NodeJS, and Netlify.",
                 "github": "https://github.com/joshsauder/personal-website-v2",
                 "image": "/WebsiteLogo.png"
             }
