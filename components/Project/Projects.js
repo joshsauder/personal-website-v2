@@ -26,7 +26,7 @@ const Projects = ({ id }) => {
     }
 
   return (
-    <div id={id}>
+    <div id={id} className="md:mb-48 mb-24">
       {/*<ContactForm modal={modal} onHide={() => setModal(false)} title={title} alert={alert} onClose={modalClose}/> */}
       <div className="container">
         <Slide left>
@@ -46,7 +46,6 @@ const Projects = ({ id }) => {
             </div>
           </div>
         </Slide>
-        <hr className="md:mb-32 mb-16" />
       </div>
     </div>
   );

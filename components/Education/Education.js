@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slide from "react-reveal/Slide";
-import ExperienceModal from "./EducationModal";
+import EducationModal from "./EducationModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EducationList from "../../data/education.json";
 import { OSUModalData } from "../../data/jobData";
@@ -33,11 +33,11 @@ function Education({ id }) {
   return (
     <div id={id}>
       {/* Index based on location in JSON */}
-      <ExperienceModal
+      <EducationModal
         modal={OSUModal}
         onHide={OSUClose}
         jobDescription={OSUModalData}
-        index={4}
+        index={5}
       />
       <div className="container">
         <Slide left>
