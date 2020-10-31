@@ -2,7 +2,6 @@ import React from 'react';
 import '../sass/Home.sass';
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
-import Navigation from './Navigation';
 import Particles from 'react-particles-js';
 import { particlesStyle, particlesParam} from '../data/particles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Home({id}){
     return (
       <div id={id}>
-        <Navigation />
         <Particles  
         style = {particlesStyle}
         params = {particlesParam}

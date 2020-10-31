@@ -15,13 +15,15 @@ import {
   faFlask,
   faEnvelope,
   faTimes,
-  faUsers
+  faUsers,
+  faAlignRight
 } from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import Experience from '../components/Experience/Experience';
 import Education from '../components/Education/Education';
 import Interests from '../components/Interests';
 import Projects from '../components/Project/Projects';
+import Navigation from '../components/Navigation'
 
 library.add(
   faGraduationCap, 
@@ -33,10 +35,12 @@ library.add(
   faEnvelope,
   faTimes,
   faUsers,
-  fab
+  fab,
+  faAlignRight
 )
 
 export default function Index() {
+
   return (
     <React.Fragment>
       <Head>
@@ -46,6 +50,7 @@ export default function Index() {
           href="//fonts.googleapis.com/css?family=Chewy" 
         />
       </Head>
+      <Navigation />
       <Home id="Home" />
       <Experience id="Experience" />
       <Education id="Education" />

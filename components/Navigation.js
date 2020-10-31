@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import "../sass/navbar.sass"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Navigation() {
+const Navigation = () => {
   const [scroll, setScroll] = useState(false);
   const navRef = useRef(null);
   
@@ -15,9 +16,9 @@ function Navigation() {
     If position moves, determine if the nav bar should be transparant or not
     */
   const setScrollPos = () => {
-    if (window.scrollY > 500 && !scroll && window.screen.width > 576) {
+    if (!scroll && window.scrollY > 100) {
       setScroll(true);
-    } else if (window.scrollY < 500 && scroll) {
+    } else {
       setScroll(false);
     }
   };
@@ -34,8 +35,8 @@ function Navigation() {
         </div>
 
         <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 border rounded text-purple-200 border-purple-400 hover:text-white hover:border-white" onClick={toggleNav}>
-            <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          <button className="flex items-center px-3 py-2 text-purple-200 border-purple-400 hover:text-white" onClick={toggleNav}>
+            <FontAwesomeIcon icon={"align-right"} />
           </button>
         </div>
       
@@ -45,7 +46,6 @@ function Navigation() {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
                 activeClass="text-opacity-100"
                 to="Home"
-                href="#"
                 spy={true}
                 smooth={true}
                 offset={-200}
@@ -57,7 +57,6 @@ function Navigation() {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
                 activeClass="text-opacity-100"
                 to="Experience"
-                href="#"
                 spy={true}
                 smooth={true}
                 offset={-200}
@@ -69,7 +68,6 @@ function Navigation() {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
                 activeClass="text-opacity-100"
                 to="Education"
-                href="#"
                 spy={true}
                 smooth={true}
                 offset={-200}
@@ -81,7 +79,6 @@ function Navigation() {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
                 activeClass="text-opacity-100"
                 to="Interests"
-                href="#"
                 spy={true}
                 smooth={true}
                 offset={-120}
@@ -93,7 +90,6 @@ function Navigation() {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-opacity-75"
                 activeClass="text-opacity-100"
                 to="Projects"
-                href="#"
                 spy={true}
                 smooth={true}
                 offset={-200}
