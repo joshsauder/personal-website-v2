@@ -4,6 +4,7 @@ const withCSS = require("@zeit/next-css")
 
 module.exports = withCSS(
   withSass({
+    target: 'serverless',
     webpack(config, options) {
       const rules = [{
         test: /\.scss$/,
@@ -23,8 +24,7 @@ module.exports = withCSS(
       module: { 
         ...config.module, 
         rules: [...config.module.rules, ...rules] 
-      },
-      target: 'serverless'
+      }
       };
   }})
 );
