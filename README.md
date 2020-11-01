@@ -26,3 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 4. [Sass](https://sass-lang.com) - CSS Extension 
 5. [Netlify](https://www.netlify.com) - Static Site Hosting
 
+## ReactJS Components
+1. [React-Particles-js](https://www.npmjs.com/package/react-particles-js) - ParticlesJS component for React that gives the background used on my home page.
+2. [React-Reveal](https://www.react-reveal.com) - Animation library used to gives elements of your webpage animations.
+3. [React-Scroll](https://www.npmjs.com/package/react-scripts) - Allows for vertical animated scrolling
