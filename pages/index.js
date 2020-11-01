@@ -49,6 +49,7 @@ export default function Index() {
           type="text/css" 
           href="//fonts.googleapis.com/css?family=Chewy" 
         />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Navigation />
       <Home id="Home" />

@@ -23,7 +23,8 @@ module.exports = withCSS(
       module: { 
         ...config.module, 
         rules: [...config.module.rules, ...rules] 
-      }
+      },
+      target: 'serverless'
       };
   }})
 );
