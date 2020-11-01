@@ -44,12 +44,14 @@ export default function Index() {
   return (
     <React.Fragment>
       <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link 
           rel="stylesheet" 
           type="text/css" 
           href="//fonts.googleapis.com/css?family=Chewy" 
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149710127-1"></script>
+        <script async src="/ga.js"></script>
       </Head>
       <Navigation />
       <Home id="Home" />
