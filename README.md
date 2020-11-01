@@ -1,5 +1,9 @@
 ## Personal Website V2
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/53e04a03-6182-419c-aa29-4eb3945136ad/deploy-status)](https://app.netlify.com/sites/admiring-engelbart-be7c63/deploys)
+[![CodeFactor](https://www.codefactor.io/repository/github/joshsauder/personal-website-v2/badge)](https://www.codefactor.io/repository/github/joshsauder/personal-website-v2)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -14,12 +18,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
 ## Tech Stack
 
-1. ReactJS
-2. NextJS
-3. TailwindCSS
-4. Sass
+1. [ReactJS](https://reactjs.org) - Javascript Framework
+2. [NextJS](https://nextjs.org) - Satic Site Rendering Framework
+3. [TailwindCSS](https://tailwindcss.com) - CSS Framework
+4. [Sass](https://sass-lang.com) - CSS Extension 
+5. [Netlify](https://www.netlify.com) - Static Site Hosting
 
