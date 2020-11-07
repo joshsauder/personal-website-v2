@@ -1,10 +1,11 @@
 export const MinderaModalData = [
     [
-        "Coming Soon!",
+        "Description coming soon!",
         "Technologies Used:"
     ],
     [
-        "Also, Coming Soon!"
+        "Frameworks/Languages: Spring Boot, NodeJS, Redis, Amazon AWS (EC2, EKR, ECS, Cloudwatch), Java 11, Javascript, Kubernetes, Docker",
+        "Project Management: Jira, Git"
     ]
 ]
 
@@ -19,7 +20,7 @@ export const OpenDemiaModalData = [
     ],
     [
         "Front-End: ReactJS, Bootstrap, AWS Amplify",
-        "Back-End: Amazon AWS (ECS, ECR, S3, DyanamoDB, Lambda), Spring Boot, Java EE, Kotlin",
+        "Back-End: Amazon AWS (EC2, ECS, ECR, S3, DyanamoDB, Lambda), Spring Boot, Java 11, Kotlin",
         "Project Management: Trello, Git, Figma"
     ]
 ]
