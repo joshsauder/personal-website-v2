@@ -5,25 +5,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navigation = () => {
   const [scroll, setScroll] = useState(false);
+  const [expanded, setExpanded] = useState(false)
   const navRef = useRef(null);
   
 
   //add scroll event listener
   useEffect(() => window.addEventListener("scroll", setScrollPos), [])
   useEffect(() => navRef.current.classList.toggle("hidden"), [])
+  useEffect(() => setScrollPos(), [expanded])
 
   /*
     If position moves, determine if the nav bar should be transparant or not
     */
   const setScrollPos = () => {
-    if (!scroll && window.scrollY > 100) {
+    if (window.scrollY > 100 || expanded) {
       setScroll(true);
     } else {
       setScroll(false);
     }
   };
 
-  const toggleNav = () => navRef.current.classList.toggle("hidden");
+  const toggleNav = () => { 
+    navRef.current.classList.toggle("hidden");
+    setExpanded(!expanded)
+  }
   
 
   return (
