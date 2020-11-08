@@ -52,6 +52,7 @@ export default function Index() {
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149710127-1"></script>
         <script async src="/ga.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <Navigation />
       <Home id="Home" />
