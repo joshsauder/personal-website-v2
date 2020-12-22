@@ -4,7 +4,7 @@ export const AmwellModalData = [
         "Technologies Used:"
     ],
     [
-        "Frameworks/Languages: NodeJS, Spring Boot, Javascript, Typescript, Java 11, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Google Cloud AI's (Health Natural Langage Processing, Speak-to-Text), Pexip (WebRTC), Kubernetes, Docker",
+        "Frameworks/Languages: NodeJS, Spring Boot, Javascript, Typescript, Java 11, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Google Cloud AI's (Healthcare Natural Langage Processing, Speak-to-Text), Pexip (WebRTC), Kubernetes, Docker",
         "Project Management: Jira, Git"
     ]
 ]
