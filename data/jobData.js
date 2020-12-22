@@ -1,17 +1,19 @@
 export const AmwellModalData = [
     [
-        "Description coming soon!",
+        "Description Coming Soon!",
         "Technologies Used:"
     ],
     [
-        "Frameworks/Languages: NodeJS, Spring Boot, Javascript, Typescript, Java 11, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Pexip (WebRTC), Kubernetes, Docker",
+        "Frameworks/Languages: NodeJS, Spring Boot, Javascript, Typescript, Java 11, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Google Cloud AI's (Health Natural Langage Processing, Speak-to-Text), Pexip (WebRTC), Kubernetes, Docker",
         "Project Management: Jira, Git"
     ]
 ]
 
 export const MinderaModalData = [
     [
-        "Description coming soon!",
+        "I worked with a client to build a backend service using Spring Boot (Java 11) for a telehealth application. This application used Redis as a cache and Pexip in order to create a virtual health visit.",
+        "I also built a authentication node module using NodeJS and Typescript that was able to authenticate a JWT token.",
+        "There were 6 developers and a project manager on my team. This was an Agile environment which included daily standups and biweekly backlog grooming, spring planning, and sprint retro meetings.",
         "Technologies Used:"
     ],
     [
