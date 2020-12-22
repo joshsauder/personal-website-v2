@@ -16,7 +16,8 @@ import {
   faEnvelope,
   faTimes,
   faUsers,
-  faAlignRight
+  faAlignRight,
+  faLaptopMedical
 } from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import Experience from '../components/Experience/Experience';
@@ -36,6 +37,7 @@ library.add(
   faTimes,
   faUsers,
   fab,
+  faLaptopMedical,
   faAlignRight
 )
 

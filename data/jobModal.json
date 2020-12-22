@@ -1,10 +1,10 @@
 [
     {
-        "company": "Mindera",
-        "title": "Backend Software Developer",
-        "date": "July 2020 - Present",
-        "modal": "MinderaModal",
-        "icon": "users"
+        "company": "Amwell",
+        "title": "Senior Software Engineer",
+        "date": "December 2020 - Present",
+        "modal": "AmwellModal",
+        "icon": "laptop-medical"
     },
     {
         "company": "Opendemia",
@@ -12,6 +12,13 @@
         "date": "August 2019 - Present",
         "modal": "ODModal",
         "icon": "graduation-cap"
+    },
+    {
+        "company": "Mindera",
+        "title": "Backend Software Developer",
+        "date": "July 2020 - December 2020",
+        "modal": "MinderaModal",
+        "icon": "users"
     },
     {
         "company": "Network Technologies International",

@@ -1,10 +1,21 @@
+export const AmwellModalData = [
+    [
+        "Description coming soon!",
+        "Technologies Used:"
+    ],
+    [
+        "Frameworks/Languages: NodeJS, Spring Boot, Javascript, Typescript, Java 11, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Pexip (WebRTC), Kubernetes, Docker",
+        "Project Management: Jira, Git"
+    ]
+]
+
 export const MinderaModalData = [
     [
         "Description coming soon!",
         "Technologies Used:"
     ],
     [
-        "Frameworks/Languages: Spring Boot, NodeJS, Redis, Amazon AWS (EC2, EKR, ECS, Cloudwatch), Java 11, Javascript, Kubernetes, Docker",
+        "Frameworks/Languages: Spring Boot, NodeJS, Java 11, Javascript, Redis, Amazon AWS (EC2, EKR, ECS, Cloudwatch), Kubernetes, Docker",
         "Project Management: Jira, Git"
     ]
 ]
