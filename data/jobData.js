@@ -26,14 +26,15 @@ export const OpenDemiaModalData = [
     [
         "I was contacted by a fellow OSU Alumni about joining his start-up as a developer. I had just finished the In The Clear iOS app, and had free-time outside my current job so I immediately joined.",
         "As with any startup, you are moving quick so it is important that you communicate and work with the other team members.",
-        "All backend development is done in Java using Spring Boot. Deployment is done using Docker and AWS ECS.",
-        "I also perform tasks on the frontend using ReactJS and Bootstrap. We use a tool called AWS Amplify to manage user login credentials, measure analytics, and deployment.",
-        "We also use AWS Lambda in order to process a website and obtain any relavent citation information (autocomplete feature).",
+        "All backend development is done using Java 11 using Spring Boot. Deployment is done using Docker and AWS ECS.",
+        "All frontend development is done using ReactJS and Bootstrap. We use a tool called AWS Amplify to manage user login credentials, measure analytics, and deployment.",
+        "We also use AWS Lambda (NodeJS) in order to process a website and obtain any relavent citation information (autocomplete feature).",
+        "We finally have various analytical scripts that I built using Kotlin.",
         "Technologies Used:"
     ],
     [
         "Front-End: ReactJS, Bootstrap, AWS Amplify",
-        "Back-End: Amazon AWS (EC2, ECS, ECR, S3, DyanamoDB, Lambda), Spring Boot, Java 11, Kotlin",
+        "Back-End: Amazon AWS (EC2, ECS, ECR, S3, DyanamoDB, Lambda), Spring Boot, NodeJS, Java 11, NodeJS, Kotlin",
         "Project Management: Trello, Git, Figma"
     ]
 ]
