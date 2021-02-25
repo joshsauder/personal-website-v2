@@ -1,6 +1,9 @@
 export const AmwellModalData = [
     [
-        "Description Coming Soon!",
+        "Built a backend service using Spring Boot (Java 11). This application used Redis as a cache and Pexip in order to create virtual telehealth visits.",
+        "Built a backend service using NodeJS that was used to create virtual telehealth visits.",
+        "Also built various NodeJS node modules using Typescript.", 
+        "There were 6 developers and a project manager on my team. This was an Agile environment that included daily standups and biweekly backlog grooming, spring planning, and sprint retro meetings.",
         "Technologies Used:"
     ],
     [
@@ -11,9 +14,9 @@ export const AmwellModalData = [
 
 export const MinderaModalData = [
     [
-        "I worked with a client to build a backend service using Spring Boot (Java 11) for a telehealth application. This application used Redis as a cache and Pexip in order to create a virtual health visit.",
-        "I also built a authentication node module using NodeJS and Typescript that was able to authenticate a JWT token.",
-        "There were 6 developers and a project manager on my team. This was an Agile environment which included daily standups and biweekly backlog grooming, spring planning, and sprint retro meetings.",
+        "I worked with a client to build a backend service using Spring Boot (Java 11) for a telehealth application. This application used Redis as a cache and Pexip in order to create virtual telehealth visits.",
+        "I also built an authentication node module using NodeJS and Typescript that was able to authenticate a JWT token.",
+        "There were 6 developers and a project manager on my team. This was an Agile environment that included daily standups and biweekly backlog grooming, spring planning, and sprint retro meetings.",
         "Technologies Used:"
     ],
     [
