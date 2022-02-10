@@ -17,7 +17,7 @@
     "next": "9.5.3",
     "next-fonts": "^1.1.0",
     "next-on-netlify": "^2.6.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-particles-js": "^3.2.1",
