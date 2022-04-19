@@ -6,14 +6,14 @@
     },
     {
         "title": "Languages and Frameworks",
-        "description": ["Java, Swift, Javascript, HTML5, CSS, ReactJS, AngularJS, Bootstrap, NodeJS, ExpressJS, Spring MVC, MSSQL, MySQL, DynamoDB, MongoDB"],
+        "description": ["JavaScript, Typescript, CSS, SASS, HTML, Bootstrap, ReactJS, Angular, NodeJS, ExpressJS, NestJS, Java 11, Spring MVC, Swift, MSSQL, MySQL, AWS DynamoDB, MongoDB, Redis, Apigee, AWS Lambda"],
         "icon": "code"
         
     },
     {
         "title": "What I'm Learning", 
         "description": [
-            "Currently - GraphQL, TailwindCSS, .Net Core",
+            "Currently - GraphQL, Apigee, .Net Core",
             "Upcoming - Gulp, Vapor (Server-side Swift framework), NextJS"
         ],
         "icon": "laptop-code"

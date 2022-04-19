@@ -1,13 +1,13 @@
 export const AmwellModalData = [
     [
-        "Built a backend service using Spring Boot (Java 11). This application used Redis as a cache and Pexip in order to create virtual telehealth visits.",
-        "Built a backend service using NodeJS that was used to create virtual telehealth visits.",
-        "Also built various NodeJS node modules using Typescript.", 
-        "There were 6 developers and a project manager on my team. This was an Agile environment that included daily standups and biweekly backlog grooming, spring planning, and sprint retro meetings.",
+        "Led the engineering efforts of an eight person team that designs and implements frontend plugins and backend services for Amwell’s Telehealth platform. This involves giving sprint demos, meeting with our VP of Engineering for a pre-sprint grooming meeting, leading code reviews, and creating stories if there are gaps.",
+        "Built a backend service and frontend plugin that transcribed and translated what a person was saying using Google Cloud Speak-to-Text AI, NodeJS, ExpressJS, Angular, Redis, AWS (DynamoDB, ECS, and API Gateway), Docker, and Jest.",
+        "Implemented a FHIR-compliant external healthcare API using Apigee, Javascript, Python, and Jest.",
+        "Built other other frontend plugins and backend services using NodeJS, NestJS, Spring Boot (Java 11), Angular, Typescript, SASS, internal design components, Jest, Karma, JUnit, Mockito, Redis, AWS (EC2, DynamoDB, ECS, and API Gateway), Kubernetes, and Docker.",
         "Technologies Used:"
     ],
     [
-        "Frameworks/Languages: NodeJS, Spring Boot, Javascript, Typescript, Java 11, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Google Cloud AI's (Healthcare Natural Langage Processing, Speak-to-Text), Pexip (WebRTC), Kubernetes, Docker",
+        "Frameworks/Languages: NodeJS, NestJS, Spring Boot, Java 11, Javascript, Typescript, SASS, Angular, Redis, Amazon AWS (EC2, DynamoDB, EKR, ECS, Cloudwatch, API Gateway), Google Cloud AI's (Healthcare Natural Langage Processing, Speak-to-Text), Pexip (WebRTC), Kubernetes, Docker, Apigee",
         "Project Management: Jira, Git"
     ]
 ]
@@ -72,7 +72,7 @@ export const OSUModalData = [
 export const CASModalData = [
     [
         "During this Co-op, I worked primary on an in-house web app. I worked with 5 other developers and a scrum master in an Agile environment. Each week, we'd have a weekly sprint meeting to determine what was completed, and what items from the product backlog were to be completed during the next sprint.",
-        "I was also given the opportunity to work on my own project to showcase what I had learned throughout my Co-op. I worked with an employee who had to manually call numerous web-services just to obtain a single ID. I ended up building a web app that allowed him to input a single ID and it would return a list of ID's that he may need. I also implemented a feature that would output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had determined that it made their job much easier.",
+        "I was also given the opportunity to work on my own project to showcase what I had learned throughout my Co-op. I worked with the marketing department which had to manually call numerous web-services just to obtain a single ID. I ended up building a web app that allowed them to input a single ID and it would return a list of ID's that they may need. I also implemented a feature that would output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had determined that it made their job much easier.",
         //place any new information above string below
         "Technologies used:"
     ],
